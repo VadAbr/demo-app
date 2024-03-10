@@ -1,6 +1,7 @@
 {
   "main": "src/index.tsx",
   "name": "react-starter-split-webpack-5-ts",
+  "homepage": "http://VadAbr.github.io/demo-app",
   "config": {
     "dev": "--config __webpack__/dev.config.js",
     "prod": "--config __webpack__/prod.config.js"
@@ -18,7 +19,9 @@
     "lint-fix": "eslint src --ext .js --ext .ts --fix",
     "test": "cross-env jest --config __jest__/jest.config.js",
     "test-watch": "jest --watch --config __jest__/jest.config.js",
-    "test-coverage": "jest --coverage --config __jest__/jest.config.js"
+    "test-coverage": "jest --coverage --config __jest__/jest.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "license": "ISC",
@@ -46,6 +49,7 @@
     "favicons": "^7.1.4",
     "favicons-webpack-plugin": "^6.0.0",
     "filemanager-webpack-plugin": "^8.0.0",
+    "gh-pages": "^6.1.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "image-minimizer-webpack-plugin": "^3.8.3",
