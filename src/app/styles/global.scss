@@ -1,0 +1,63 @@
+@use "sass:map";
+@import "variables";
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html, body, body > div {
+  height: 100%;
+}
+
+#root {
+  background-color: #e9ebee;
+  background-image: url("../../../assets/bg.jpg");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Roboto, sans-serif;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-routing-container-hide .leaflet-routing-collapse-btn {
+  top: 0 !important;
+  left: 1px !important;
+}
+
+//.red svg, .red svg > *{
+//  color: #9d1919 !important;
+//  stroke: #9d1919 !important;
+//}
+//
+//.green svg, .green svg > *{
+//  color: #308530 !important;
+//  stroke: #308530 !important;
+//}
+//
+//.yellow svg, .yellow svg > *{
+//  color: #c4c430 !important;
+//  stroke: #c4c430 !important;
+//}
+//
+//.orange svg, .orange svg > *{
+//  color: #c99b46 !important;
+//  stroke: #c99b46 !important;
+//}

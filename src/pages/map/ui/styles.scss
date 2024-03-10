@@ -1,0 +1,48 @@
+.modal {
+  min-width: 450px;
+  max-width: 450px;
+  padding: 25px;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.infoTitle {
+  font-weight: 600;
+}
+
+.info > div {
+  margin-left: 5px;
+}
+
+.image {
+  width: 100%;
+  max-height: 300px;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.addBtn {
+  margin-top: 20px;
+}
+
+.routeButton {
+  position: absolute !important;
+  z-index: 800;
+  bottom: 20px;
+  right: 20px;
+}
+
+.recenterButton {
+  position: absolute !important;
+  z-index: 800;
+  bottom: 20px;
+  left: 20px;
+}

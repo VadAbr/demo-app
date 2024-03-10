@@ -1,15 +1,22 @@
-import * as commonStyles from '../styles/common.module.scss';
-import * as styles from './app.module.scss';
+import * as styles from './styles.scss';
+import '../styles/global.scss';
 import React from 'react';
-import cn from 'classnames';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { ROUTES } from '@shared/constants';
+import { MapPage } from '@pages/map';
+import { PlayerItemPage, PlayerPage } from '@pages/player';
+import { WorkPage } from '@pages/work';
 
 export const App = () => {
   return (
-    <Router>
-      <div className={styles.wrapper}>
-        <main className={cn(commonStyles.container, styles.content)}>Test1</main>
-      </div>
-    </Router>
+    <main className={styles.wrapper}>
+      <Routes>
+        <Route path={ROUTES.map} element={<MapPage />} />
+        <Route path={ROUTES.player} element={<PlayerPage />} />
+        <Route path={ROUTES.playerItem} element={<PlayerItemPage />} />
+        <Route path={ROUTES.work} element={<WorkPage />} />
+        <Route path={ROUTES.other} element={<Navigate replace to={ROUTES.map} />} />
+      </Routes>
+    </main>
   );
 };

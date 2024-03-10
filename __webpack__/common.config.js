@@ -128,10 +128,43 @@ module.exports = {
       // --- S/A/C/SS
       {
         test: /\.(s[ac]|c)ss$/i,
+        include: [
+          path.resolve(__dirname, '../node_modules'),
+          path.join(__dirname, '..', 'src/app/styles'),
+        ],
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader', // translates css into CommonJS
+            loader: 'css-loader',
+          },
+          {
+            // autoprefixer
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(s[ac]|c)ss$/i,
+        exclude: [
+          path.resolve(__dirname, '../node_modules'),
+          path.join(__dirname, '..', 'src/app/styles'),
+        ],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
             options: {
               esModule: true,
               // css modules
