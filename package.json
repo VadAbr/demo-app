@@ -20,7 +20,7 @@
     "test": "cross-env jest --config __jest__/jest.config.js",
     "test-watch": "jest --watch --config __jest__/jest.config.js",
     "test-coverage": "jest --coverage --config __jest__/jest.config.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-dev",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
