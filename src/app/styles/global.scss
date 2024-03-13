@@ -42,6 +42,26 @@ html, body, body > div {
   left: 1px !important;
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #d9d9d9;
+  border-bottom-color: #1976d2;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 //.red svg, .red svg > *{
 //  color: #9d1919 !important;
 //  stroke: #9d1919 !important;

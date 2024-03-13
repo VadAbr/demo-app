@@ -1,6 +1,106 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { PageLayer } from '@shared/ui';
+import Button from '@mui/material/Button';
+import Select from '@mui/material/Select';
+import { getJobs } from '@pages/work/api';
+import * as styles from './styles.scss';
+import { MenuItem } from '@mui/material';
+import { JobCard } from './jobCard';
+import { Loader } from './loader';
+
+export type Job = {
+  title: string;
+  url: string;
+  salary: string;
+  employer: string;
+  experience: string;
+  addInfo: string[];
+  logoEmployerSrc: string;
+};
+
+const cities = [
+  {
+    label: 'Тума',
+    value: 'tuma',
+  },
+  {
+    label: 'Спас-Клепики',
+    value: 'spas-klepiki',
+  },
+];
 
 export const WorkPage = () => {
-  return <PageLayer>work</PageLayer>;
+  const [jobs, setJobs] = useState<Job[]>([]);
+  const [currentCity, setCurrentCity] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isPlaceholderActive, setIsPlaceholderActive] = useState(false);
+  const isFirstRequest = useRef(false);
+
+  const search = () => {
+    setIsLoading(true);
+    setIsPlaceholderActive(false);
+    getJobs({ city: currentCity, page: '1' })
+      .then((res) => {
+        if (isFirstRequest.current && res.jobs?.length === 0) {
+          setIsPlaceholderActive(true);
+        }
+        setJobs(res.jobs);
+      })
+      .finally(() => {
+        isFirstRequest.current = true;
+        setIsLoading(false);
+      });
+  };
+
+  const onChangeCity = (event: any) => {
+    setCurrentCity(event.target.value);
+  };
+
+  return (
+    <PageLayer>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <h1>Поиск вакансий</h1>
+
+          <p>Город / Населенный пункт</p>
+          <Select
+            placeholder={'Выберите город для поиска'}
+            onChange={onChangeCity}
+            value={currentCity}
+            fullWidth
+            disabled={isLoading}
+          >
+            {cities.map((el) => (
+              <MenuItem key={el.value} value={el.value}>
+                {el.label}
+              </MenuItem>
+            ))}
+          </Select>
+
+          <Button
+            style={{ width: '150px' }}
+            variant="contained"
+            onClick={search}
+            disabled={!currentCity || isLoading}
+          >
+            Поиск
+          </Button>
+
+          {isPlaceholderActive && <div className={styles.loader}>Вакансии не найдены</div>}
+
+          {isLoading ? (
+            <div className={styles.loader}>
+              <Loader />
+            </div>
+          ) : (
+            <div className={styles.cardList}>
+              {jobs.map((el) => (
+                <JobCard key={el.url} {...el} />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </PageLayer>
+  );
 };

@@ -66,6 +66,12 @@ const devServer = {
   },
 
   port: 3000,
+  proxy: [
+    {
+      context: ['/jobs'],
+      target: 'http://localhost:3001',
+    },
+  ],
   /**
    * Writes files to output path (default: false)
    * Build dir is not cleared using <output: {clean:true}>
