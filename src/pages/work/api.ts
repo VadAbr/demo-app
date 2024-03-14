@@ -1,6 +1,6 @@
 export const getJobs = async ({ city, page = '1' }: { city: string; page: string }) => {
   const response = await fetch(
-    '/jobs?' +
+    'http://demo-app-back.onrender.com/jobs?' +
       new URLSearchParams({
         city,
         page,
