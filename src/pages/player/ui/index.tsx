@@ -17,14 +17,14 @@ const VIDEOS: TVideo[] = [
     image: 'https://radioiskatel.ru/wp-content/uploads/2018/10/ozero-bajkal-5.jpg',
     path: ROUTES.player + '/1',
   },
-  {
-    name: 'Куршская коса',
-    image: 'https://kaliningradinfo.ru/upload/iblock/89e/89e1b31e36070207303a4218dcd41c82.jpg',
-  },
-  {
-    name: 'Плато Путорана',
-    image: 'https://cdn.culture.ru/c/65819.jpg',
-  },
+  // {
+  //   name: 'Куршская коса',
+  //   image: 'https://kaliningradinfo.ru/upload/iblock/89e/89e1b31e36070207303a4218dcd41c82.jpg',
+  // },
+  // {
+  //   name: 'Плато Путорана',
+  //   image: 'https://cdn.culture.ru/c/65819.jpg',
+  // },
 ];
 
 export const Page = () => {

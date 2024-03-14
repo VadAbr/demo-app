@@ -1,5 +1,36 @@
 import { Accessibility, MarkerType, TMarker } from '@pages/map/store/types';
 
+import img1 from '../../../../assets/images/1.jpg';
+import img2 from '../../../../assets/images/2.jpg';
+import img3 from '../../../../assets/images/3.jpg';
+import img4 from '../../../../assets/images/4.jpg';
+import img5 from '../../../../assets/images/5.jpg';
+import img6 from '../../../../assets/images/6.jpg';
+import img7 from '../../../../assets/images/7.jpg';
+import img8 from '../../../../assets/images/8.jpg';
+import img9 from '../../../../assets/images/9.jpg';
+import img10 from '../../../../assets/images/10.jpg';
+import img11 from '../../../../assets/images/11.jpg';
+import img12 from '../../../../assets/images/12.jpg';
+import img13 from '../../../../assets/images/13.jpg';
+import img14 from '../../../../assets/images/14.jpg';
+import img15 from '../../../../assets/images/15.jpg';
+import img16 from '../../../../assets/images/16.jpg';
+import img18 from '../../../../assets/images/18.png';
+import img19 from '../../../../assets/images/19.jpg';
+import img20 from '../../../../assets/images/20.jpg';
+import img21 from '../../../../assets/images/21.jpg';
+import img22 from '../../../../assets/images/22.jpg';
+import img23 from '../../../../assets/images/23.jpg';
+import img24 from '../../../../assets/images/24.jpg';
+import img25 from '../../../../assets/images/25.jpg';
+import img26 from '../../../../assets/images/26.jpg';
+import img27 from '../../../../assets/images/27.jpg';
+import img28 from '../../../../assets/images/28.jpg';
+import img29 from '../../../../assets/images/29.jpg';
+import img30 from '../../../../assets/images/30.jpg';
+import img31 from '../../../../assets/images/31.jpg';
+
 export const Markers: TMarker[] = [
   {
     name: 'Администрация муниципального образования-Клепиковский муниципальный район',
@@ -7,8 +38,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, площадь Ленина, 1',
     accessibility: Accessibility.full,
     type: MarkerType.government,
-    image:
-      'https://downloader.disk.yandex.ru/preview/b888e5b6c3ef69d460ee681b53ad0fa12b008351b861d52efef0afa8bfcaa71c/65e8e313/GyInrPTZYscNNkZ1el2hXEcA9OyWTLPhzrgC3qEhb6x9bc0p4MuC7MTW8_efi7FxTAW8qjfnk0Zh5x3fwVFpng%3D%3D?uid=0&filename=1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048',
+    image: img1,
   },
   {
     name: 'Администрация Муниципального - Криушинское Сельское Поселение Клепиковского Муници-пального района',
@@ -30,8 +60,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, село Екшур, улица Красный Октябрь, 1',
     accessibility: Accessibility.temporarily_unavailable,
     type: MarkerType.government,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/df0a70d58cdbe7070e89e2ac40b238e655fff462563beb0b88ff7ce3cca6796c/inf/G5Mujm2y-w-vuo6QI9-jYPGVxS0e9cMz6UX4iKEv_fO6f_PGXxJpbw1c19t9EAmD3VlsPodh7tRn1zSwDZYr7g%3D%3D?uid=323542374&filename=2.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img2,
   },
   {
     name: 'Управление социальной защиты населения',
@@ -39,8 +68,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, площадь Ленина, 65А',
     accessibility: Accessibility.full,
     type: MarkerType.government,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/0dbf1d64e7904c314f8d3f21da6808d1fd250912fafecc33f89a97ed26728849/inf/eOvil-7PsVXlONhX3W75JoDfE3hVls22SpPi6O006Oj6wAdTbENejADW7KYUXciRTN7t8Yt0gLTyacXAYolXyg%3D%3D?uid=323542374&filename=3.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img3,
   },
   {
     name: 'Дом культуры',
@@ -48,8 +76,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Есенина, 7',
     accessibility: Accessibility.full,
     type: MarkerType.culture,
-    image:
-      'https://3.downloader.disk.yandex.ru/preview/eb57476721efd3d41279fe61addd21c8090695a78a234094b59f2f6123e35bfd/inf/ZW6WHwa5D_VoACqFetXAVCPJ95lESusi2USuA1jgs5rnFETP5gkFeoLHRUacCnffP28vQkMuUU9Ph_1X3IhhCA%3D%3D?uid=323542374&filename=4.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img4,
   },
   {
     name: 'Центральная Клепиковская библиотека',
@@ -57,8 +84,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Есенина, 6',
     accessibility: Accessibility.partially,
     type: MarkerType.culture,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/5a46c9a9bc318b479440c409531cb40d94883e2b36145966ba35c6d5fb5f82f5/inf/P-47gX1Haw2fOVORIt4MRfNR00ZPjIocc-3hDAXMoxxkBPbQWmtlIPJzti99Zc-om-yiNw4fjKBhS4H0Pxwpog%3D%3D?uid=323542374&filename=5.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img5,
   },
   {
     name: 'Детская библиотека',
@@ -66,8 +92,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Свердлова, 16',
     accessibility: Accessibility.temporarily_unavailable,
     type: MarkerType.culture,
-    image:
-      'https://4.downloader.disk.yandex.ru/preview/fbc54a7eeea67d2d3da0ace986bbeed3073806a718683722be5db1054f884089/inf/oUBL6-2OqyRM8IqToaXM8uW1U2BtzNXY3m2vsQBb4yvWBe8fFOfP3XHp5sYAFyvTmTY39KuArTW0ANHQvyJwIw%3D%3D?uid=323542374&filename=6.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img6,
   },
   {
     name: 'Дом творчества',
@@ -89,8 +114,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, рабочий посёлок Тума, улица Ленина, 133',
     accessibility: Accessibility.partially,
     type: MarkerType.culture,
-    image:
-      'https://3.downloader.disk.yandex.ru/preview/46975acdc753c82b89e1bf58e7b412bb89be292f825b15723e779255e1ecac82/inf/nNr6EMLtCFU8FwEWXyIPLNIyOKqEpVdZpUeO9l1lRAVwYM1R9886aZitprSVdxJXQxuOXPtV-UNV-4fObiJwoQ%3D%3D?uid=323542374&filename=7.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img7,
   },
   {
     name: 'Сельский дом культуры',
@@ -98,8 +122,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, село Екшур, улица Красный Октябрь, 7',
     accessibility: Accessibility.full,
     type: MarkerType.culture,
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/252784fa466bdbcbd19e154c34f9478de147a800ad9af2aa18df21f697d3143d/inf/K3lHAzclYZ0HukNbFH7NBb-Uv4yhQ1SQ1uNv46QsPF_d0OIpyIO58dM9sS4XHviOEWPw0bk1sFUXf6KLuLzfHg%3D%3D?uid=323542374&filename=8.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img8,
   },
   {
     name: 'Дом культуры',
@@ -107,8 +130,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, село Криуша, улица 1 Мая, 4',
     accessibility: Accessibility.full,
     type: MarkerType.culture,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/a702a2adcede3ce02cfddd17c0f1d44178a9dabf78260f20b903e5c81522606c/inf/nUq9vlJYYKfeyK2-XaNMj2yWMbg1YR240pLxiyUKTQuV_YMa68TGHZPhCn-BI2oxVEiM2RHPbnv-jo2g-HPQJA%3D%3D?uid=323542374&filename=9.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img9,
   },
   {
     name: 'Болонский сельский дом культуры Мещера',
@@ -123,8 +145,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, посёлок Болонь, улица Школьная, 5',
     accessibility: Accessibility.none,
     type: MarkerType.education,
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/9441aec9f53e9eaf6f96b9e76b4f4f044f77a9e13af122f2bb07111d0fafda99/inf/ZMFjCJEBpbRnggbylj7e_GGw49rgWvxZM5FVy8bgLTfuOSRgi8u0859IKQg6l1-24ftPZdiRV4WOA7BxuNjS2A%3D%3D?uid=323542374&filename=10.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img10,
   },
   {
     name: 'МОУ Криушинская СОШ ',
@@ -132,8 +153,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, улица 1 Мая, 1Б',
     accessibility: Accessibility.partially,
     type: MarkerType.education,
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/696fdfe7e8f68ef48503ff5a1fa33edec133d833ac5f577d61791efe9bdc614c/inf/T-Yl0ymHoKo52It6NObbVvTMG0ZQjq5T-b4pvqaf-SlzBvTQzleDbXCpRfG1x_B6L389Kc57FR5NF5KRqS00Fg%3D%3D?uid=323542374&filename=11.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img11,
   },
   {
     name: 'МОУ Екшурская СОШ',
@@ -141,8 +161,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, село Екшур, улица Красный Октябрь, 1А',
     accessibility: Accessibility.full,
     type: MarkerType.education,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/2b586db223645e74b74efb548c73c9b1b9c48cffe1abe8a5b56ddbc871034a84/inf/wlIE_yK_TIwx58sDMPgjUEqZVdkOGsPHwcHZjnBqNfe0-_7ftigQQTjtvabIjmLz4Qrwifj7T6VWPzABZPYl0g%3D%3D?uid=323542374&filename=12.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img12,
   },
   {
     name: 'Тумская средняя школа N3',
@@ -150,11 +169,10 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, рабочий посёлок Тума, улица Энгельса, 33А',
     accessibility: Accessibility.partially,
     type: MarkerType.education,
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/d2067f9364b6fa403ced73d1193e41e7b557a53f3edbfd3fb93e9f74c96e2bef/inf/E9qyJSGLR6VADROVdCcdzf0VC4iksozCA0paeBQm-Cmgk7iLcRzuZAhSQhjD590IyzOrQY-tT_rJJgrka6u2EA%3D%3D?uid=323542374&filename=13.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img13,
   },
   {
-    name: 'Тумская детская музыкальная школа ',
+    name: 'Тумская детская музыкальная школа',
     coords: [55.149447, 40.56706],
     address: 'Рязанская область, Клепиковский район, рабочий посёлок Тума, улица Ленина, 18',
     accessibility: Accessibility.partially,
@@ -166,8 +184,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, рабочий посёлок Тума, улица Ленина, 141',
     accessibility: Accessibility.partially,
     type: MarkerType.education,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/35f600c72e8e8f0787c9a16ca4e7af980aabba870e705468694cc824c573b3a7/inf/wuhcbLXEVSEZEoKomGazwLUPuWUwv1EkNV3wA1P48Q68qnOQZDVn5rWMiTFheXG2FLHs6Hw9fNpx1S4Hl2GUBg%3D%3D?uid=323542374&filename=14.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img14,
   },
   {
     name: 'МОУ Клепиковский СОШ N1',
@@ -175,8 +192,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Ленина, 88',
     accessibility: Accessibility.full,
     type: MarkerType.education,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/b7aa6a557065dca7b6be895ed27db3ceada7a1ec0f184cb2e9465b00ce08d903/inf/PU1wpN1znG7MPKleUzigJ60BWQF7tiB9iFPR3KfsyedoKYBuMxeTEeglepG4SH0XAee810FMiA-aRB-3AdEpfA%3D%3D?uid=323542374&filename=15.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img15,
   },
   {
     name: 'Физкультурно-оздоровительный комплекс Триумф',
@@ -184,8 +200,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Московская, 12',
     accessibility: Accessibility.partially,
     type: MarkerType.sport,
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/e0669e8411ca914e51978c00e4d4db0e10e5223fe1d8a6e8caaca43cef1218b1/inf/D5IxiDDlZHJ9kEuHoMziypcpPvN45Od6GG6ZD2iDq_A4OldlW6oYwEB1EQnxPs7zWJKx88Kvglfl6fcpuYTCGQ%3D%3D?uid=323542374&filename=16.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img16,
   },
   {
     name: 'ГБУ РО Клепиковский РБ ',
@@ -193,8 +208,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, город Спас-Клепики, улица Бебеля, 3',
     accessibility: Accessibility.partially,
     type: MarkerType.medicine,
-    image:
-      'https://3.downloader.disk.yandex.ru/preview/cf587e72de97b50692cb14f7602df589780f173adf04cd7dafe756299821212e/inf/mDEgxNjf7osqkiKwn74SKQAFTjZHpD3XjyfjzwZA7KLmsqxHTpKIRO-pJ3vhkvQrCai1AybUFJW1-gcsDOEFUg%3D%3D?uid=323542374&filename=18.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img18,
   },
   {
     name: 'Криушинская участковая больница',
@@ -202,8 +216,7 @@ export const Markers: TMarker[] = [
     address: 'Рязанская область, Клепиковский район, село Криуша, улица 1 Мая, 1Г',
     accessibility: Accessibility.full,
     type: MarkerType.medicine,
-    image:
-      'https://4.downloader.disk.yandex.ru/preview/3d356b0a95c5a3b9556d6d1d00aef90d88d2813d6646d21dcd77579bb5e60010/inf/MKa3j0fssY7hFbeWQmi3tc2t7O-XrPEderINGaOVza85U5Ctj2-YOWALvDOqqFkpPFQS5XLAgzZjWBBf33d-Lg%3D%3D?uid=323542374&filename=19.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img19,
   },
   {
     name: 'МУЗ Болонская участковая больница',
@@ -227,8 +240,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.museum,
     description:
       'Музей С.А. Есенина, а правильное название музей "Второклассная церковно-приходская школа" расположен в школе, куда Сергей Есенин в возрасте 14 лет поступил и далее три года учился с 1909 по 1912 гг. Именно Спас-Клепики стали второй духовной родиной Есенина, ведь здесь он сформировался как творческая личность и здесь были написаны одни из его первых стихов. В музее бережно хранят наследие Есенина. На первом этаже здания воссозданы кухня и комнаты его преподавателей. На втором этаже стоит деревянная парта, где сидел будущий поэт. Школьное общежитие воспроизводит обстановку, в которой жили юноши, а стены выставочного зала укра-шают работы художников из Рязани и Москвы.',
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/57038e46f1556c8ddc543fe4398bad40af13cad3dcb6f9440469679f5e8b2493/inf/DAqboGUiM-1fRSz-cOz7z2PzMY1374vHT0FouLPvbYonUaeAu-ALuuILjY0nlfuksmuC5DIP_DDgUHTc_MZ7kQ%3D%3D?uid=323542374&filename=20.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img20,
   },
   {
     name: 'Постоялый двор на Касимовского тракте',
@@ -238,8 +250,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.museum,
     description:
       'Постоялый двор на Касимовском тракте - это даже не музей, это историческое иммерсивное про-странство, которое с первых минут погружает в историю Мещёры, Тумы. Вы сразу становитесь участником событий. Ко всему можно прикоснуться, присесть и даже прилечь, предварительно выбрав перину пуховую или набитую сеном. Можно залезть на печку, попробовать себя в роли хо-зяйки, познакомиться со странинной утварью. Проект реализуют при поддержке Президентского фонда культурных инициатив.',
-    image:
-      'https://3.downloader.disk.yandex.ru/preview/c62d8b96359ffdaca17a413d48ed1442ff7f7fbeb197808855d789f7f1238a1c/inf/SRQ2P-xKciTLv8Tsk6CDw0OzuvCRiBbC0wEi3fQXpPhBHwoYEZXEHYJYH7Xsquedx893fHojFEI8WYKS8i9yag%3D%3D?uid=323542374&filename=21.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img21,
   },
   {
     name: 'Дом-музей Тумского сказителя Были не были',
@@ -249,8 +260,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.museum,
     description:
       'Основная экспозиция музея состоит из двух частей. Первая – литературно-историческая, о писателях, чье творчество и жизнь были связаны с рязанской мещерой. Вторая часть – предметы крестьянского быта и промыслов, один шаг, и вы переноситесь в 19 век с самот-каными половичками, деревянной и глиняной утварью, сундуками разных мастей, станками и при-способлениями, и много еще разного необычного.',
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/65f60a5bfc9b14a3bd6d1ebabe0e0f9c0e9dba55ca771400c6732dac27e8b5d1/inf/Uo4y1kn6QVj6J9AT3nBhbab705cZ4WSWX-2-RKaoBhNAY2Sup0hb7zfa9akkY47ozdPTPy9Z4maeKKHrZKFgWg%3D%3D?uid=323542374&filename=22.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img22,
   },
   {
     name: 'Музей деревянного зодчества',
@@ -264,8 +274,7 @@ export const Markers: TMarker[] = [
       '- обширную поляну 3,5 Га с соснами и березами;\n' +
       '- 3 музейных здания, в которых в 15 залах находятся удивительные сказочные экспонаты;\n' +
       '- действующий детский игровой комплекс "Мещерская сказка" - результат пяти всероссий-ских фестивалей мастеров по садово-парковой скульптуре.',
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/87cf2c85170038a5b3ab37eb11633c690421c93b341734e413059fa89947a777/inf/SU2MvUHMPJfVq9Rn5ziK6mwS64LQt9ILf_ey6MUMiMMY63nmLgZzADQeJ0tEp50-7FvrfHntHpeLnBANXNx8rg%3D%3D?uid=323542374&filename=23.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img23,
   },
   {
     name: 'Парк-отель Фестиваль',
@@ -275,8 +284,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.rest,
     description:
       'Парк-отель «Фестиваль» — это загородный комплекс европейского типа с охраняемой территори-ей. Расположился он прямо в заповедных лесах Рязани, между несколькими прудами и недалеко от Мещерского национального парка. Это один из самых уединенных уголков. Красивая природа, экологически чистый воздух, расслабляющая атмосфера — только небольшой перечень того, что вы найдете в парк-отеле «Фестиваль». А если к этому еще добавить современное оснащение ком-плекса, команду приятных в общении и профессиональных сотрудников, то ему не найдется рав-ных.',
-    image:
-      'https://4.downloader.disk.yandex.ru/preview/ee64002c5dbf9f4da178ad4be4d4355c7bd0b59c86ac67624349b54eed778381/inf/mGSo89wUGAeeV_SwwVeCEq28F3ve9k3RPWPSNEBQnN3zCLCOZXhF4yGSWzjHWy1qhFdLt6DkUBxqlLlQ4ZCALg%3D%3D?uid=323542374&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img24,
   },
   {
     name: 'База отдыха Паруса',
@@ -287,8 +295,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.rest,
     description:
       'Парк - отель находится в экологически чистом районе Рязанской области, в 60 километрах от Ряза-ни. 40 минут езды на машине и вы в уединенном уютном месте на берегу озера Белое. Разместиться можно как в гостиничном номере,так и снять отдельный домик.',
-    image:
-      'https://3.downloader.disk.yandex.ru/preview/0322a0f56e9052372725f4b6bb7dcde01b27927705f7eaf4279ad19c92a6a011/inf/7Tjk5s_WxMfxWr-yy6Xa9nhf2sQQy8DgFpq1i2dA1QG0cxD6Dc2zI2P-H_2zLxvBRdLPaMj6fOT4rHm0ZJLY2w%3D%3D?uid=323542374&filename=25.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img25,
   },
   {
     name: 'База отдыха Полушкино',
@@ -299,8 +306,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.rest,
     description:
       'База отдыха «Полушкино» находится всего в 180 км от Москвы и всего в 70 км от Рязани, в одном из самых живописных мест, где чистейшие озера соседствуют с великолепными густыми лесами. В течении всего года база готова предоставлять своим гостям возможность провести незабываемый отдых. Спектр услуг варьируется от умиротворяющей рыбалки на берегу реки Пра до активных видов спорта.',
-    image:
-      'https://4.downloader.disk.yandex.ru/preview/79f564ce43d20efe73b00c24bf522984fbedfb079bee54725073642ff08d6315/inf/kYhCL4vSdesfrlk3s_IATeU4dZ_B0gOcmfR088r4TnEEZ1vJHKGJXQ8b7RbTFrGL564d-oZBvhQUee-uH4_LwQ%3D%3D?uid=323542374&filename=26.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img26,
   },
   {
     name: 'Кафе Паруса',
@@ -310,8 +316,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.cafe,
     description:
       'Ресторан "Паруса" находится в живописном месте у большого озера. Зал вместительный, места удобные. Есть столики вне помещения. Хорошее обслуживание. Тип кухни: Европейская, Русская.',
-    image:
-      'https://4.downloader.disk.yandex.ru/preview/451b71c21d6e492758dcc03ae3fadd5dc59d52c69170ec0d7184ec4b4f7c96ba/inf/upzluL_M7byZkG8hbuWRKlB0L77Jxd5gjD2MFc1Pl_Uxb9nVUO-Y8-6XRkpGH3r32vV1t8d5OgppWGWMa5O5iQ%3D%3D?uid=323542374&filename=27.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img27,
   },
   {
     name: 'Ресторан Престиж-Холл',
@@ -321,8 +326,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.cafe,
     description:
       'Банкетный комплекс Престиж Холл– это 3 роскошных банкетных зала, собственная кухня и про-фессиональная банкетная служба. Здесь вы сможете провести идеально ваше торжество, а свежий воздух, живописные виды, профессионализм сотрудников позволит запомнить его надолго.',
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/d023c412de10edd967abf3717ab5586aae67e94ec4c1c3ddb169a5c3e6dd33c9/inf/RChRpqy2TIWcXq_TIKHZX1qKtBNDyQMNbd1iC1JflIvI0azuPmpOUWmFbRLVNgdhLOjFjsAEOHYBIA75MeDIkQ%3D%3D?uid=323542374&filename=28.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img28,
   },
   {
     name: 'Ресторан Сердце Парижа',
@@ -332,8 +336,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.cafe,
     description:
       'Ресторан «Сердце Парижа» имеет 2 этажа и круговую планировку, сцену для развлекательных ме-роприятий. Он рассчитан на 600-650 посадочных мест, декорирован в стиле французского шика.',
-    image:
-      'https://1.downloader.disk.yandex.ru/preview/2f6126a26af787814a33b7ff254faa38ca56e20e3a5aced965828922252a695f/inf/TJ--F6Djs7SZc8Z8T6ICYw9bOooJGrT_5PtdOXQ4qeCndTrHqbiBhTCRtITZ8ubuEpDmg9bPCppjjxtMUNAA-Q%3D%3D?uid=323542374&filename=29.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img29,
   },
   {
     name: 'Кафе Старый Хутор',
@@ -343,8 +346,7 @@ export const Markers: TMarker[] = [
     type: MarkerType.cafe,
     description:
       'Кафе «Старый Хутор» – это атмосферное место с интересным интерьером, хорошей мебелью и вкусной едой.',
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/d9e7bd41247b00bdd54ce15965281e19fb8de2c0921f0ccc997774fa9258f5b2/inf/Sq3_2zZiWMy9sdO_LW2H8FPwbXjr4IKoVSLjt_XZjr37I9SWZznEVj_s1U-7Hlky7W-zRdKj4C3swafuKhL59Q%3D%3D?uid=323542374&filename=30.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img30,
   },
   {
     name: 'Кафе Березка',
@@ -354,7 +356,6 @@ export const Markers: TMarker[] = [
     type: MarkerType.cafe,
     description:
       'Уютное семейное кафе, вкусная «домашняя еда». Вежливый персонал, обслуживание на высоте.',
-    image:
-      'https://2.downloader.disk.yandex.ru/preview/1a47aafbcbea28a903909f7391d6c2fb7da568c92b835baa412889f257b6139b/inf/rvZp1foLk9sBzHItu2G3TQGaSbnUwEp12Di_0pw597oYgJm6qBcPf2k_Uf-hvfQEN-3q8rFfxmwHMFjdT_13HA%3D%3D?uid=323542374&filename=31.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=323542374&tknv=v2&size=941x909',
+    image: img31,
   },
 ];

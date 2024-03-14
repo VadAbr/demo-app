@@ -37,7 +37,9 @@ export const InfoPanel = () => {
       <div className={styles.modal}>
         <h3 className={styles.title}>{chosenMarker?.name}</h3>
 
-        <img className={styles.image} src={chosenMarker?.image} alt={chosenMarker?.name} />
+        {chosenMarker?.image && (
+          <img className={styles.image} src={chosenMarker?.image} alt={chosenMarker?.name} />
+        )}
 
         <p className={styles.info}>
           <span className={styles.infoTitle}>Тип:</span>
