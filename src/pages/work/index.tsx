@@ -7,6 +7,7 @@ import * as styles from './styles.scss';
 import { MenuItem } from '@mui/material';
 import { JobCard } from './jobCard';
 import { Loader } from './loader';
+import Checkbox from '@mui/material/Checkbox';
 
 export type Job = {
   title: string;
@@ -19,6 +20,10 @@ export type Job = {
 };
 
 const cities = [
+  {
+    label: 'Поиск по России',
+    value: 'russia',
+  },
   {
     label: 'Тума',
     value: 'tuma',
@@ -33,13 +38,14 @@ export const WorkPage = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [currentCity, setCurrentCity] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isForDisabled, setIsForDisabled] = useState(false);
   const [isPlaceholderActive, setIsPlaceholderActive] = useState(false);
   const isFirstRequest = useRef(false);
 
   const search = () => {
     setIsLoading(true);
     setIsPlaceholderActive(false);
-    getJobs({ city: currentCity, page: '1' })
+    getJobs({ city: currentCity, isForDisabled: isForDisabled })
       .then((res) => {
         if (isFirstRequest.current && res.jobs?.length === 0) {
           setIsPlaceholderActive(true);
@@ -56,6 +62,10 @@ export const WorkPage = () => {
     setCurrentCity(event.target.value);
   };
 
+  const onChangeCheckbox = () => {
+    setIsForDisabled((prevState) => !prevState);
+  };
+
   return (
     <PageLayer>
       <div className={styles.wrapper}>
@@ -63,19 +73,27 @@ export const WorkPage = () => {
           <h1>Поиск вакансий</h1>
 
           <p>Город / Населенный пункт</p>
-          <Select
-            placeholder={'Выберите город для поиска'}
-            onChange={onChangeCity}
-            value={currentCity}
-            fullWidth
-            disabled={isLoading}
-          >
-            {cities.map((el) => (
-              <MenuItem key={el.value} value={el.value}>
-                {el.label}
-              </MenuItem>
-            ))}
-          </Select>
+
+          <div style={{ width: '100%' }}>
+            <Select
+              placeholder={'Выберите город для поиска'}
+              onChange={onChangeCity}
+              value={currentCity}
+              fullWidth
+              disabled={isLoading}
+            >
+              {cities.map((el) => (
+                <MenuItem key={el.value} value={el.value}>
+                  {el.label}
+                </MenuItem>
+              ))}
+            </Select>
+
+            <div style={{ display: 'flex', alignItems: 'center', width: '312px', margin: '0 auto' }}>
+              <Checkbox onChange={onChangeCheckbox} />
+              <span>Доступные людям с инвалидностью</span>
+            </div>
+          </div>
 
           <Button
             style={{ width: '150px' }}

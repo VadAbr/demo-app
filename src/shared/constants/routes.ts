@@ -4,5 +4,6 @@ export const enum ROUTES {
   player = '/player',
   playerItem = '/player/:id',
   work = '/work',
+  courses = '/courses',
   other = '*',
 }

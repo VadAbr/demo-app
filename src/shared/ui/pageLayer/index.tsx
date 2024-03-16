@@ -5,6 +5,7 @@ import { ROUTES } from '@shared/constants';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import PlaceIcon from '@mui/icons-material/Place';
 import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 import * as styles from './styles.scss';
 
 export const PageLayer: React.FC<any> = ({ children }) => {
@@ -31,6 +32,12 @@ export const PageLayer: React.FC<any> = ({ children }) => {
           icon={<WorkIcon />}
           label="Работа"
           onClick={() => navigate(ROUTES.work)}
+        />
+        <BottomNavigationAction
+          value={ROUTES.courses}
+          icon={<SchoolIcon />}
+          label="Курсы"
+          onClick={() => navigate(ROUTES.courses)}
         />
       </BottomNavigation>
       {children}

@@ -6,6 +6,7 @@ import { ROUTES } from '@shared/constants';
 import { MapPage } from '@pages/map';
 import { PlayerItemPage, PlayerPage } from '@pages/player';
 import { WorkPage } from '@pages/work';
+import { CoursesPage } from '@pages/courses';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
         <Route path={ROUTES.player} element={<PlayerPage />} />
         <Route path={ROUTES.playerItem} element={<PlayerItemPage />} />
         <Route path={ROUTES.work} element={<WorkPage />} />
+        <Route path={ROUTES.courses} element={<CoursesPage />} />
         <Route path={ROUTES.other} element={<Navigate replace to={ROUTES.map} />} />
       </Routes>
     </main>
