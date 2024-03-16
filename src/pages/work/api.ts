@@ -6,7 +6,7 @@ export const getJobs = async ({
   isForDisabled: boolean;
 }) => {
   const response = await fetch(
-    '/jobs?' +
+    'http://demo-app-back.onrender.com/jobs?' +
       new URLSearchParams({
         city,
         isForDisabled: String(isForDisabled),
